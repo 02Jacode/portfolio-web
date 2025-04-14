@@ -114,9 +114,10 @@ form{
 }
 @media (max-width: 768px){
   .contactbody {
-      padding: 1rem;
+      padding: 2rem;
   }
   .boxes{
+    padding: 1rem;
     display: flex;
     flex-direction: column;
   }
@@ -131,8 +132,6 @@ form{
 .boxes{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 2rem;
 }
 .contactForm{
     text-align: left;
@@ -146,7 +145,7 @@ form{
 .contactbody fieldset{
     border: 2px solid rgb(4, 188, 255);
     border-radius: 10px;
-    padding: 15px 15px;
+    padding: 10px 5px;
 }
 form{
     padding: 1rem;
@@ -158,7 +157,7 @@ form{
     color: azure;
     border: 2px solid rgb(4, 188, 255);
     padding: 1rem;
-    font-size: large;
+    font-size: medium;
 }
 .contactForm textarea{
     width: auto;
