@@ -1,0 +1,114 @@
+.contactbody{
+    padding: 0 0 10rem 3rem;
+    color:  rgb(255, 255, 255);
+}
+.contactbody h1{
+    color: #010b1a;
+    font-size: 2.5rem;
+    font-weight: bold;
+    -webkit-text-stroke: 1px rgb(4, 188, 255);
+    font-family:'Georgia','Trebuchet MS', sans-serif;
+}
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+.contactForm{
+    text-align: left;
+    width: 50px;
+}
+.contactbody legend{
+    border: 2px solid rgb(4, 188, 255);
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+.contactbody fieldset{
+    border: 2px solid rgb(4, 188, 255);
+    border-radius: 10px;
+    padding: 15px 25px;
+}
+.contactForm form{
+    padding: 1rem;
+    font-size: 20px
+}
+.contactForm input[type=email]{
+    width: auto;
+    background-color: #010b1a;
+    color: azure;
+    border: 2px solid rgb(4, 188, 255);
+    padding: 1rem;
+    font-size: large;
+}
+.contactForm textarea{
+    width: auto;
+    background-color: #010b1a;
+    color: azure;
+    border: 2px solid rgb(4, 188, 255);
+    padding: 1rem;
+    font-size: large;
+}
+.btn-56,
+.btn-56 *,
+.btn-56 :after,
+.btn-56 :before,
+.btn-56:after,
+.btn-56:before {
+  border: 0 solid ;
+  box-sizing: border-box;
+}
+.btn-56 {
+  -webkit-tap-highlight-color: transparent;
+  background-color: #010b1a;
+  border: 2px solid rgb(4, 188, 255);
+  color: #fff;
+  cursor: pointer;
+  font-size: 50%;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+.btn-56:disabled {
+  cursor: default;
+}
+.btn-56:-moz-focusring {
+  outline: auto;
+}
+.btn-56 svg {
+  display: block;
+}
+.btn-56 [hidden] {
+  display: none;
+}
+.btn-56 {
+  border: 1px solid;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  overflow: hidden;
+  padding: 1rem 2rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-56:hover {
+  -webkit-animation: pulse 0.5s;
+  animation: pulse 0.65s;
+  box-shadow: 0 0 0 2em transparent;
+}
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgb(4, 188, 255);
+  }
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgb(4, 188, 255);
+  }
+}
+.IntroVid{
+
+}

@@ -1,0 +1,27 @@
+.containerc{
+    padding: 1rem 0 8rem 3rem;
+    color:  rgb(255, 255, 255);
+
+}
+.containerc h1{
+    color: #010b1a;
+    font-size: 2.5rem;
+    font-weight: bold;
+    -webkit-text-stroke: 1px rgb(4, 188, 255);
+    font-family:'Georgia','Trebuchet MS', sans-serif;
+}
+.containerc .certs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+.containerc .certificatesimges {
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(255, 244, 244, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.containerc .certificatesimges img{
+    width:125px;
+    height: inherit;
+}

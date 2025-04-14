@@ -1,0 +1,129 @@
+.mobile-menu-button {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 101;
+}
+
+.mobile-menu-button button {
+    background: transparent;
+    border: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 8px;
+    color: #ffffff;
+}
+
+.PageLogo h1 {
+    padding: 0 0 0 1rem;
+    margin-top: 15px;
+    color: #010b1a;
+    font-size: 2.5rem;
+    font-weight: bold;
+    -webkit-text-stroke: 2px rgb(4, 188, 255);
+    font-family:'Times New Roma', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.menu{
+position: fixed;
+right: 0;
+top: 0;
+height: 100vh;
+width: 250px;
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.8);
+border-radius: 16px 0 0 0;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.5px);
+-webkit-backdrop-filter: blur(8.5px);
+border: 1px solid rgba(254, 254, 254, 0.01);
+padding: 20px 0;
+z-index: 100;
+transition: all 0.5s ease;
+}
+.menu:hover {
+    box-shadow: 
+      0 0 15px rgba(255, 255, 255, 0.6),
+      -5px 0 30px rgba(109, 187, 255, 0.4);
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(8px);
+  }
+
+.menu.collapsed {
+    width: 70px;
+}
+
+.menu.collapsed span {
+    display: none;
+}
+
+.menu.collapsed button {
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.menu nav{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0 15px;
+}
+.menu nav button.active{
+    background-color: #000f26;
+    border-radius: 15px;
+    color: #ececec;
+}
+.menu nav a{
+    text-decoration: none;
+}
+
+.menu nav button{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #02013b;
+    text-align: left;
+}
+.menu nav button:hover{
+    background-color: #010a23;
+    border-radius: 15px;
+    color: #f5f5f5;
+}
+@media (max-width: 768px) {
+    .mobile-menu-button {
+        display: block;
+    }
+
+    .menu {
+        width: 70px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .menu.mobile-open {
+        transform: translateX(0);
+    }
+
+    .menu nav button span {
+        display: none;
+    }
+
+    .menu nav button {
+        justify-content: center;
+        padding: 12px 0;
+    }
+
+    .menu nav {
+        padding: 0 10px;
+    }
+}

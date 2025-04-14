@@ -1,0 +1,82 @@
+.containers{
+    padding: 1rem 0 8rem 3rem;
+    color:  rgb(255, 255, 255);
+
+}
+.containers h1{
+    color: #010b1a;
+    font-size: 2.5rem;
+    font-weight: bold;
+    -webkit-text-stroke: 1px rgb(4, 188, 255);
+    font-family:'Georgia','Trebuchet MS', sans-serif;
+}
+.Skillset{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+}
+.Skillset fieldset{
+    font-size: 1.5rem;
+    color:  rgb(255, 255, 255);
+    border-radius: 14px;
+    border: 2px solid rgb(4, 188, 255);
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+}
+.Skillset legend{
+    border: 2px solid rgb(4, 188, 255);
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+.Skillset fieldset:hover{
+    color: rgb(4, 188, 255);
+    box-shadow: 0 6px 12px rgba(4, 188, 255, 0.5);
+    border-color: rgba(4, 188, 255, 0.8);
+}
+ul li{
+    list-style: square;
+    text-decoration: none;
+}
+.icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 1rem 5rem 1rem 3rem;
+    transition: width 0.3s ease, height 0.5s linear, opacity 0.2s;
+
+}
+.icons img{
+    width: 35px;
+    height: 25px;
+    filter: drop-shadow(0 0 5px rgba(9, 104, 255, 0.8));
+    transition: all 0.5s ease;
+}
+.icons img:hover{
+    transform: scale(1.5);
+    filter: drop-shadow(0 0 10px rgba(4, 188, 255, 0.8));
+}
+@media (max-width: 768px) {
+    .containers{
+        padding: 1rem 0 8rem 1rem;
+    }
+    .containers h1{
+        font-size: 2rem;
+    }
+    .Skillset{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .icons{
+        flex-direction: grid;
+        align-items: center;
+        gap: 1rem;
+    }
+    .icons img{
+        width: 35px;
+        height: 25px;
+    }
+}
