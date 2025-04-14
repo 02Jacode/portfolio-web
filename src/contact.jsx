@@ -25,8 +25,8 @@ function Contact(){
                     alt="My Video Introduction"
                      url="https://www.youtube.com/watch?v=wexzvClUcUk"
                      controls
-                     width="150%"
-                     height="100%"
+                     width="100%"
+                     height="120%"
                  />
             </div>
             </div>
